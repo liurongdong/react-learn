@@ -1798,6 +1798,11 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
+app-root-path@~2.2.0:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/app-root-path/download/app-root-path-2.2.1.tgz#d0df4a682ee408273583d43f6f79e9892624bc9a"
+  integrity sha1-0N9KaC7kCCc1g9Q/b3npiSYkvJo=
+
 aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/aproba/download/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
@@ -2823,6 +2828,14 @@ commitizen@^4.0.3:
     shelljs "0.7.6"
     strip-bom "4.0.0"
     strip-json-comments "3.0.1"
+
+commitlint-config-cz@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.npm.taobao.org/commitlint-config-cz/download/commitlint-config-cz-0.12.1.tgz#1d2fa261050b05370a5024a2ae537b8e74df4759"
+  integrity sha1-HS+iYQULBTcKUCSirlN7jnTfR1k=
+  dependencies:
+    app-root-path "~2.2.0"
+    lodash.clonedeep "~4.5.0"
 
 commitlint-config-gitmoji@^1.0.1:
   version "1.0.1"
@@ -6740,6 +6753,11 @@ lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/lodash._reinterpolate/download/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
+
+lodash.clonedeep@~4.5.0:
+  version "4.5.0"
+  resolved "https://registry.npm.taobao.org/lodash.clonedeep/download/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
+  integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
 lodash.ismatch@^4.4.0:
   version "4.4.0"
