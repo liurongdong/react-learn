@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from "react";
 import XiaojiejieItem from "./xiaojiejieItem";
+import { fetchUserLogin } from "./api/user.js";
+import Button from "antd/es/button";
 import "./style.css";
 class Xiaojiejie extends Component {
   constructor(props) {
@@ -16,6 +18,7 @@ class Xiaojiejie extends Component {
   }
   //只在页面加载时执行一次
   componentDidMount() {
+    this.login();
     console.log("did mount");
   }
   shouldComponentUpdate() {
@@ -42,6 +45,7 @@ class Xiaojiejie extends Component {
           />
           <button onClick={this.handleClick.bind(this)}>增加</button>
         </div>
+        <Button type="primary">Button</Button>
         <ul ref={ul => (this.ul = ul)}>
           {/* jsx内的注释不同  尽量用编辑器自带的注释快捷键 */}
           {this.state.list.map((item, index) => {
@@ -77,6 +81,14 @@ class Xiaojiejie extends Component {
     let list = this.state.list;
     list.splice(item, 1);
     this.setState({ list });
+  }
+  async login() {
+    let params = {
+      name: "liu",
+      age: 12
+    };
+    let res = await fetchUserLogin(params);
+    console.log(res);
   }
 }
 
