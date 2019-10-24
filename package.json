@@ -5,15 +5,18 @@
   "dependencies": {
     "antd": "^3.24.2",
     "axios": "^0.19.0",
+    "babel-plugin-import": "^1.12.2",
+    "customize-cra": "^0.8.0",
     "js-cookie": "^2.2.1",
     "react": "^16.9.0",
+    "react-app-rewired": "^2.1.4",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "commit": "git-cz",
     "commit:retry": "git-cz --retry",
