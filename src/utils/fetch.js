@@ -14,7 +14,7 @@ const service = axios.create({
 service.interceptors.request.use(
   config => {
     // do something before request is sent
-    config.headers["Content-Type"] = "application/x-www-form-urlencoded";
+    config.headers["Content-type"] = "application/x-www-form-urlencoded";
     config.headers["Cache-Control"] = "no-cache";
     config.headers["Pragma"] = "no-cache";
     // let each request carry token
